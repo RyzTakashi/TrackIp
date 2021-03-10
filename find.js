@@ -35,7 +35,7 @@ console.log("=====================================")
 console.log('');
 /* ........................................ */
 
-console.log(''); tanya.question('[!] Masukan alamat ip : ', (ipmu) => {
+console.log(''); tanya.question('[!] Masukan alamat ip : ', (iplu) => {
 
 /* ........................................ */
 
