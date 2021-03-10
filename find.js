@@ -39,7 +39,7 @@ console.log(''); tanya.question('[!] Masukan alamat ip : ', (ipmu) => {
 
 /* ........................................ */
 
-req("http://api.ipstack.com/" + `${ipmu}` +  "?access_key=" + key[0], function (error, response, body){
+req("http://api.ipstack.com/" + `${iplu}` +  "?access_key=" + key[0], function (error, response, body){
     ip = JSON.parse(body)
     if(response.statusCode == 200) {
         console.log("[".biru + "!".merah + "]".biru + "  Tipe Ip            : " + ip["type"])
@@ -59,7 +59,7 @@ req("http://api.ipstack.com/" + `${ipmu}` +  "?access_key=" + key[0], function (
 
 /* ........................................ */
 
-req("http://ip-api.com/json/" + `${ipmu}` + "?fields=mobile", function (error, response, body){
+req("http://ip-api.com/json/" + `${iplu}` + "?fields=mobile", function (error, response, body){
     ip = JSON.parse(body)
     if(response.statusCode == 200) {
         console.log("[".hijau + "!".merah + "]".hijau + "  Perangkat Mobile   : " + ip["mobile"])
